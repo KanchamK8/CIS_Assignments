@@ -1,0 +1,55 @@
+
+RDD API's
+
+The RDD (Resilient Distributed Dataset) API is a fundamental data structure in Apache Spark, which is a distributed computing framework. RDDs provide a way to distribute data across a cluster and perform parallel operations on that data. Here are some key RDD API functions in Spark:
+
+-->
+parallelize: Creates an RDD from a collection in the driver program
+
+data = [1, 2, 3, 4, 5]
+rdd = sparkContext.parallelize(data)
+
+-->
+textFile: Creates an RDD by reading data from a text file.
+
+rdd = sparkContext.textFile("file.txt")
+
+-->
+map: Applies a function to each element of the RDD and returns a new RDD.
+
+squared_rdd = rdd.map(lambda x: x*x)
+-->
+filter: Filters the elements of the RDD based on a predicate and returns a new RDD with the filtered elements.
+
+filtered_rdd = rdd.filter(lambda x: x > 3)
+
+-->
+reduce: Aggregates the elements of the RDD using a binary operator and returns a single result.
+
+sum = rdd.reduce(lambda x, y: x + y)
+
+-->
+flatMap: Applies a function to each element of the RDD and returns a new RDD by flattening the results.
+
+words_rdd = rdd.flatMap(lambda x: x.split())
+
+-->
+groupByKey: Groups the values of the RDD by key and returns an RDD of key-value pairs
+
+grouped_rdd = rdd.groupByKey()
+
+-->
+sortByKey: Sorts the elements of the RDD by key and returns a new RDD
+
+sorted_rdd = rdd.sortByKey()
+
+-->
+join: Performs an inner join between two RDDs based on a common key and returns a new RDD.
+
+joined_rdd = rdd1.join(rdd2)
+
+-->
+persist: Persists the RDD in memory or disk for faster reuse.
+
+rdd.persist()
+

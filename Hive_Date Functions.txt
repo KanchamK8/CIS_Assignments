@@ -1,0 +1,34 @@
+
+Hive
+
+Date Functions
+
+Current date in the local time zone.
+
+SELECT current_date();
+
+Current timestamp in the local time zone.
+
+SELECT current_timestamp();
+
+Formats a date or timestamp according to the specified format string. The format follows the Java SimpleDateFormat format
+
+SELECT date_format(date_column, 'yyyy-MM-dd');
+SELECT date_format(timestamp_column, 'yyyy-MM-dd HH:mm:ss');
+
+Extracts the year from a date or timestamp.
+
+SELECT year(date_column);
+SELECT year(timestamp_column);
+
+Extracts the quarter from a date or timestamp
+
+SELECT quarter(date_column);
+SELECT quarter(timestamp_column);
+
+Extracts the month from a date or timestamp.
+
+SELECT month(date_column);
+SELECT month(timestamp_column);
+
+

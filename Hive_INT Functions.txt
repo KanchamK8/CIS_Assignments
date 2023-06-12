@@ -1,0 +1,36 @@
+
+INT functions in Hive
+
+SELECT abs(-10);
+
+Returns the smallest integer that is greater than or equal to the numeric expression.
+
+SELECT ceil(3.7);
+
+Returns the largest integer that is less than or equal to the numeric expression.
+
+SELECT floor(3.7);
+
+Rounds the numeric expression to d decimal places. If d is not specified, it defaults to 0 and rounds to the nearest whole number. 
+
+SELECT round(3.7);
+SELECT round(3.745, 2);
+
+Returns a random number between 0 and 1.
+
+SELECT rand();
+
+Returns the sign of the numeric expression as -1, 0, or 1, representing negative, zero, or positive respectively.
+
+SELECT sign(-10);
+
+Returns the square root of the numeric expression
+
+SELECT sqrt(16);
+
+Raises the numeric expression to the power of p.
+
+SELECT pow(2, 3);
+
+
+

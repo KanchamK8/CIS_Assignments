@@ -1,0 +1,31 @@
+
+String Functions in Hive
+
+Concatenates two or more strings together.
+
+SELECT concat('Hello', ' ', 'World');
+
+Returns the length of the input string
+
+SELECT length('Hello World');
+
+Converts all characters in the input string to lowercase
+
+SELECT lower('Hello World');
+
+Converts all characters in the input string to uppercase
+ 
+SELECT upper('Hello World');
+
+Extracts a substring from the input string, starting from the specified index and with the specified length
+
+SELECT substring('Hello World', 7, 5);
+
+Removes leading and trailing whitespace from the input string
+
+SELECT trim('   Hello World   ');
+
+Returns the position of the first occurrence of the substring within the input string.
+
+SELECT instr('Hello World', 'World');
+
